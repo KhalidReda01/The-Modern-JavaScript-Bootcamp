@@ -1,0 +1,10 @@
+-  curriculum overview
+-  tip1 write code
+-  tip2 asq questions
+-  tip3 take your  time 
+######
+Learning is not a race 
+It would be very easy to blow through this class in four days simply stop following along and dont' complete any of the challenges could be done by friday 
+the problem is that when you you are done you wont' actually understand javascript 
+so It's going to take a little more time and that's ok maybe it's three weeks or maybe it's six months 
+stay consistent put in a little time 
