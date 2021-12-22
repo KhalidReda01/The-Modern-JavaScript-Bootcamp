@@ -15,4 +15,16 @@ let getScoreText = function (name="Anonymous", score = 0) {
 // let scoreText = getScoreText("Khaild",100)
 let scoreText = getScoreText(undefined,100)
 // let scoreText = getScoreText()
-console.log(scoreText)
+// console.log(scoreText)
+
+
+//Challenge Area
+// total , tipPercent .1 ,2 ,5
+
+let getTip = function (total=0, tipPercent=0.2) {
+  // console.log("test")
+  return "The tip of total : "+total+"$ is " +total*tipPercent +"$"
+}
+getTip()
+let resultTip = getTip(100, 0.2)
+console.log(resultTip)
