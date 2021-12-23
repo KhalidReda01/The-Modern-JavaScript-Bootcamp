@@ -26,5 +26,6 @@ let getTip = function (total=0, tipPercent=0.2) {
   return "The tip of total : "+total+"$ is " +total*tipPercent +"$"
 }
 getTip()
-let resultTip = getTip(100, 0.2)
+// let resultTip = getTip(100, 0.2)
+let resultTip = getTip(40, 0.25)
 console.log(resultTip)
