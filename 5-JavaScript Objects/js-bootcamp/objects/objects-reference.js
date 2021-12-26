@@ -32,7 +32,7 @@ let addIncome = function (account,amount) {
 
 // resetAccount
 let resetAccount = function (account) {
-   account.name = "",  account.expenses = 0,  account.income = 0;
+  account.name = "",  account.expenses = 0, account.income = 0;
 }
 
 // getAccountSummary
@@ -70,4 +70,6 @@ resetAccount(otherAccount)
 getAccountSummary(otherAccount)
 // print the account after reset 
 console.log(otherAccount)
+
+
 
