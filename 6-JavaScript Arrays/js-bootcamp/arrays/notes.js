@@ -28,3 +28,16 @@ notes.forEach(function (item, index) {
   console.log(index)
   console.log(item)
 })
+//Counting ...1
+for (let count = 0; count <= 2;count =count+1 ){
+// for (let count = 2; count >= 0;count =count-1 ){
+  //  console.log(count)
+   console.log(notes[count])
+}
+console.log("##################")
+console.log(notes.length-1)
+
+// for (let count = 0; count < notes.length; count++){
+for (let count = notes.length - 1; count >= 0; count--){
+  console.log(notes[count])
+}
