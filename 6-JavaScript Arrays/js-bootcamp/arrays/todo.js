@@ -43,6 +43,6 @@ console.log(toDo.length)
 // Challengre Area 
 for (let count = 0; count < toDo.length; count++){
   // for (let  count=toDo.length-1 ; count >=0 ; count--){//reverse
-
-  console.log(toDo[count])
+console.log(`${count+1}. ${toDo[count]}`)
+  // console.log(toDo[count])
 }
