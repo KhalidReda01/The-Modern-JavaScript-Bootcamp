@@ -30,12 +30,19 @@ toDo.shift()
 console.log(toDo)
 //1.The first Item
 //2.The second Items
-toDo.forEach(function (item, index) {
-  console.log(`${index+1}. ${item}`)
-  // console.log(`ToDo index is ${index} ToDo Item is ${item}`)
-  // console.log(item)
-})
+// toDo.forEach(function (item, index) {
+//   console.log(`${index+1}. ${item}`)
+//   // console.log(`ToDo index is ${index} ToDo Item is ${item}`)
+//   // console.log(item)
+// })
 
 // 1. Do your homwork
 // 2.make  your dinner
+console.log("##################")
+console.log(toDo.length)
 // Challengre Area 
+for (let count = 0; count < toDo.length; count++){
+  // for (let  count=toDo.length-1 ; count >=0 ; count--){//reverse
+
+  console.log(toDo[count])
+}
