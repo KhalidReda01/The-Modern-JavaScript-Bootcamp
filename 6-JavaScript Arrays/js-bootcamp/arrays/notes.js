@@ -82,6 +82,9 @@ const findNote = function (notes, noteTitle) {
        return note.title.toLowerCase() === noteTitle.toLowerCase() // it gives me the same message // to just keep going I will not use the toLowerCase until I find a solution because I don't see why toLowerCase is not defind
   })
 }
+
+
+
 const note = findNote(notes, "Habbits to work on")
 console.log(note)
 // console.log(`$ The Notes Array length is{notes.length}`)
