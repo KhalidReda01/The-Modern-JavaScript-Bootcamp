@@ -59,22 +59,22 @@ const notes = [
   title: "Office Modification",
   body:"Get a new seat"
   }]
-// // Searching Arrays : part 2
-// const findNote = function (notes, noteTitle) {
-//   const index = notes.findIndex(function (note, index) {
-//     // console.log(note.title=== noteTitle)
-//     // console.log(note.title.toLowerCase() === noteTitle.toLowerCase())
-//     // return note.title.toLowerCase()=== noteTitle.toLowerCase
-//     // There is a problem
-//     //.toLowerCase TypeError: Cannot read property 'toLowerCase' of undefined Cannot read property 'toLowerCase' of undefined
-//     // this is the source code but even using it gives me the same undefind message 
-//     // console.log(noteTitle.toUpperCase())
-//     // console.log({}.toUpperCase()) // see you can't pass an empty object it will gives you the smae message undefined Cannot read property 'toLowerCase' of undefined
-//     return note.title.toLowerCase() === noteTitle.toLowerCase() // it gives me the same message // to just keep going I will not use the toLowerCase until I find a solution because I don't see why toLowerCase is not defind
-//     // return note.title === noteTitle 
-//   })
-//   return notes[index]
-// }
+// Searching Arrays : part 2
+const findNote = function (notes, noteTitle) {
+  const index = notes.findIndex(function (note, index) {
+    // console.log(note.title=== noteTitle)
+    // console.log(note.title.toLowerCase() === noteTitle.toLowerCase())
+    // return note.title.toLowerCase()=== noteTitle.toLowerCase
+    // There is a problem
+    //.toLowerCase TypeError: Cannot read property 'toLowerCase' of undefined Cannot read property 'toLowerCase' of undefined
+    // this is the source code but even using it gives me the same undefind message 
+    // console.log(noteTitle.toUpperCase())
+    // console.log({}.toUpperCase()) // see you can't pass an empty object it will gives you the smae message undefined Cannot read property 'toLowerCase' of undefined
+    return note.title.toLowerCase() === noteTitle.toLowerCase() // it gives me the same message // to just keep going I will not use the toLowerCase until I find a solution because I don't see why toLowerCase is not defind
+    // return note.title === noteTitle 
+  })
+  return notes[index]
+}
 // Searching Arrays : part 2
 const findNote = function (notes, noteTitle) {
   // notes.push("hello")

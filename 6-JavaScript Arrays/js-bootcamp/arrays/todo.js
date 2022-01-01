@@ -58,27 +58,46 @@ const toDoo = [
   }, {
     text: 'adjust your desk/workspace', completed: false
   }]
-// 2.create a function to work with the array of object allow us to remove todo by text value
-const deleteToDoo = function (todoo,arrayText) {
-  // if (toDoo.text.toLowerCase() === arrayText.toLowerCase) {
-  // console.log(todooo.text)
-  // console.log(todooo.completed)
-  // console.log(arrayText)
+// // 2.create a function to work with the array of object allow us to remove todo by text value
+// const deleteToDoo = function (todoo,arrayText) {
+//   // if (toDoo.text.toLowerCase() === arrayText.toLowerCase) {
+//   // console.log(todooo.text)
+//   // console.log(todooo.completed)
+//   // console.log(arrayText)
   
-  return todoo.find(function (todo) {
-    // console.log(todo.text)
-      // console.log(arrayText)
-    // console.log(arrayText)
-    // return toDoo.text.toLowerCase() === arrayText.toLowerCase()// not again
-    // console.log(todo.text)
-    if (todo.text.toLowerCase() === arrayText.toLowerCase() && todo.completed===true) {
-      return todo.text='Deleted to do'
+//   return todoo.find(function (todoo,index) {
+//     // console.log(todo.text)
+//       // console.log(arrayText)
+//     // console.log(arrayText)
+//     // return toDoo.text.toLowerCase() === arrayText.toLowerCase()// not again
+//     // console.log(todo.text)
+//     if (todoo.text.toLowerCase() === arrayText.toLowerCase() && todoo.completed === true) {
+//       console.log(index)
+//      console.log(todoo.splice(0, 1))
+//       // return todo.text = 'Deleted to do'
+//       return todoo.text = 'Deleted to do'
 
-  }else {
-    return todo.text.toLowerCase() === arrayText.toLowerCase()
-    }
+//   }else {
+//       return todoo.text.toLowerCase() === arrayText.toLowerCase()
+
+//     }
      
+//   })
+// }
+// const todo =deleteToDoo(toDoo,'Do your homwork')
+// // const todo =deleteToDoo(toDoo,'adjust your desk/workspace')
+// console.log(todo)
+
+// // console.log(toDoo[0])
+// using findIndex instead of find with the instructor 
+const deleteTodo = function (todos, todoText) {
+  const index = todos.findIndex(function (todo){
+    return todo.text.toLowerCase() ===todoText.toLowerCase()
   })
+  if (index > -1) {
+    todos.splice(index,1)
+  }
 }
-const todo =deleteToDoo(toDoo,'Do your homwork')
-console.log(todo)
+
+deleteTodo(toDoo, 'Do your homwork')
+console.log(toDoo)
