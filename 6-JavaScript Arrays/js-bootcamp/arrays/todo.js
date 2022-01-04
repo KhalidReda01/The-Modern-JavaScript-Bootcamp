@@ -20,7 +20,7 @@
 // }
 // console.log(getThingsToDo(toDoo))
 // // Cool solved with no time that's why I said you have to watch the lecture again before actually doing the challenge it that's amazing 
-const toDoo = [
+const toDoo = [{text:'clearn your clothes',completed:false},
   {
     text: 'Do your homwork', completed: true
   }, {
@@ -30,3 +30,21 @@ const toDoo = [
   }, {
     text: 'adjust your desk/workspace', completed: false
   }]
+
+  //Challengre Area 
+const sortToDoo = function (toDoo) {
+  toDoo.sort(function (a, b) {
+    // if the a is completed then b come first and vice versa 
+    if (a.completed) {
+        return 1
+    } else if (b.completed) {
+      return -1
+    } else {
+      return 0
+    }
+   
+     
+    })
+}
+sortToDoo(toDoo)
+  console.log(toDoo)
