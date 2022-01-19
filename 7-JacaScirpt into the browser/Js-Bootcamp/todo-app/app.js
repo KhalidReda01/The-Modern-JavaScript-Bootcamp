@@ -84,3 +84,6 @@ document.querySelector('button').addEventListener('click', function (e) {
   console.log("I'm ading a new todo")
 })
 //Challenge Area Advanced Queries
+document.querySelector('#add-todo').addEventListener('click', function (e) {
+  e.target.textContent="You Added a todo"
+})
