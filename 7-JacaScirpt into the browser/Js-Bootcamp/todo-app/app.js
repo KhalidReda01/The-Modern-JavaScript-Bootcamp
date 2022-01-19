@@ -46,6 +46,7 @@ const toDoo = [{
     completed: false
   }
 ]
+
 //  You have  2 todos left this is the instructor not you
 //  You have 3 todos left (p element)
 // Add a p for each todo above (use text value )
@@ -76,4 +77,9 @@ toDoo.forEach(function (todo) {
     // console.log('there is a problem here the problem was just you mistyped textContent you wrote textConent but you are the one who disover that ')
   }
  
+})
+
+// Handling User  Interaction Challengre Area 
+document.querySelector('button').addEventListener('click', function (e) {
+  console.log("I'm ading a new todo")
 })
