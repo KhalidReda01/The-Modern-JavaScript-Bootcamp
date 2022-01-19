@@ -49,12 +49,24 @@ const toDoo = [{
 //  You have  2 todos left this is the instructor not you
 //  You have 3 todos left (p element)
 // Add a p for each todo above (use text value )
-const createP = document.createElement('p')
-  createP.textContent = 'You have 3 todos left'
-document.querySelector('body').appendChild(createP)
+// There is Modification here the instructor it tbe be Dynamic not static
+
+//Old solution understand the new one Any way you make the hard part and didn't think that he want the other part Dynamicaly
+// const createP = document.createElement('p')
+//   createP.textContent = 'You have 3 todos left'
+// document.querySelector('body').appendChild(createP)
+const incompleteTodos = toDoo.filter(function (todo) {
+  return !todo.completed
+})
+
+console.log(incompleteTodos)
+const summary = document.createElement('h2')
+summary.textContent = `You have ${incompleteTodos.length} todos left`
+document.querySelector('body').appendChild(summary)
+/*Instrucor solution He used filter to return and object/array or the false  todos  */
 
 toDoo.forEach(function (todo) {
-  const createtodoP = document.createElement('p')
+    const createtodoP = document.createElement('p')
 
   if (todo.completed === false) {
     createtodoP.textContent = todo.text
