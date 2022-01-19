@@ -1,3 +1,15 @@
+const notes = [
+  {
+   title: "My next Trip",
+   body:"I would like to go to Turkey"
+ }, {
+   title: "Habbits to work on",
+   body:"Exercise. Eating a bit better"
+   }, {
+   title: "Office Modification",
+   body:"Get a new seat"
+  }]
+
 console.log("This is from my HTML document")
 // DOM Document Object Model 
 // Query and remove 
