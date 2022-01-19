@@ -83,3 +83,4 @@ toDoo.forEach(function (todo) {
 document.querySelector('button').addEventListener('click', function (e) {
   console.log("I'm ading a new todo")
 })
+//Challenge Area Advanced Queries

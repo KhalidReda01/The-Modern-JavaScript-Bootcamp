@@ -24,9 +24,15 @@ const notes = [
 //   // console.log(p)
 // //  console.log(p.textContent)
 // })
-document.querySelector('button').addEventListener('click', function (event) {
+document.querySelector('#create-note').addEventListener('click', function (event) {
   // console.log('Did this work? ')
   // // console.log(event)
   // // console.log(event.target)
   event.target.textContent="The was clicked"
+})
+document.querySelector('#remove-all').addEventListener('click', function () {
+  console.log('Delete all Notes')
+  document.querySelectorAll('.note').forEach(function (note) {
+    note.remove()
+  })
 })
