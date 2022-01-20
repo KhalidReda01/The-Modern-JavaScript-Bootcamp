@@ -87,3 +87,9 @@ document.querySelector('button').addEventListener('click', function (e) {
 document.querySelector('#add-todo').addEventListener('click', function (e) {
   e.target.textContent="You Added a todo"
 })
+
+// Challenge Area
+// I didn't understand what he want me do but He said I have to create an input and add an event listener to it
+document.querySelector('#create-todo').addEventListener("change", function (e) {
+  console.log(e.target.value)
+})
